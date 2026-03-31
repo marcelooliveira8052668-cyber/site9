@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
 }
 
 /* BODY */
@@ -15,16 +15,21 @@ body {
 /* HEADER */
 header {
   background: #020617;
-  padding: 15px;
+  padding: 20px;
   text-align: center;
   border-bottom: 2px solid #38bdf8;
 }
 
 /* NAV */
+nav {
+  margin-top: 10px;
+}
+
 nav a {
   color: #38bdf8;
   margin: 0 10px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
@@ -33,12 +38,58 @@ nav a:hover {
 
 /* MAIN */
 main {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 10px;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 15px;
 }
 
-/* CARD PADRÃO */
+/* ===================== */
+/* INDEX (BLOCOS) */
+/* ===================== */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+/* CARD DO INDEX */
+.card-index {
+  background: #020617;
+  width: 230px;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  color: #e2e8f0;
+  border: 2px solid #38bdf8;
+  transition: 0.3s;
+}
+
+.card-index h2 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+/* HOVER BONITO */
+.card-index:hover {
+  transform: scale(1.05);
+  background: #38bdf8;
+  color: black;
+}
+
+.card-index:hover h2 {
+  color: black;
+}
+
+/* ===================== */
+/* PÁGINAS INTERNAS */
+/* ===================== */
+
 .card {
   background: #020617;
   margin-bottom: 20px;
@@ -47,3 +98,62 @@ main {
   transition: 0.3s;
 }
 
+/* IMAGEM */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* TEXTO */
+.card-content {
+  padding: 15px;
+}
+
+.card h2 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+/* HOVER */
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* DESTAQUE */
+.destaque {
+  color: #facc15;
+  margin-top: 10px;
+}
+
+/* ===================== */
+/* NOTÍCIAS (opcional) */
+/* ===================== */
+
+.noticia {
+  background: #020617;
+  padding: 20px;
+  margin: 25px 0;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+
+.noticia:hover {
+  transform: scale(1.02);
+}
+
+.noticia h2 {
+  color: #38bdf8;
+}
+
+/* ===================== */
+/* FOOTER */
+/* ===================== */
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #020617;
+  margin-top: 30px;
+}
